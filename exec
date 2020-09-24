@@ -1,0 +1,3 @@
+cd ../../dokka
+(./gradlew publishToMavenLocal -x test && cd ../dokka-bugs/mm && ./gradlew --no-daemon --stacktrace clean dokkaHtmlMultiModule) || cd ../dokka-bugs/mm
+
